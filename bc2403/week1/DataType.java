@@ -39,9 +39,31 @@ public class DataType {
     System.out.println(k6);
     System.out.println(0.1 + 0.2);
 
-
     int u = 10 % 3;
     System.out.println(u);
+
+    byte b1 = 0;
+    byte b2 = 128;
+   // byte b3 = -129;
+
+    short s1 = -32768;
+    //short s2 = -32769;
+
+    boolean bl1 = true;
+    boolean bl2 = false;
+    //boolean b13 = 0;
+
+    int i1 = 100;
+    short s4 = i1; //complate time care security, unless 100% safe
+
+    float f3 = i1;
+    float f4 = 10.2f;
+
+    int r1 = 4;
+    byte b13 = 4;
+    byte b14 = r1;
+
+
   }
 
 }
