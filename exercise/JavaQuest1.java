@@ -3,18 +3,8 @@ package exercise;
 /**
  * Expected Output:
  * 
- * I am going to add two numbers together:
- * The first one: 31
- * The second one: 42
- * The sum is 73
- * The subtraction reuslt is 11
- * The another sum result is 130
- * The variable varB is false
- * The variable varC is true
- * The variable fnumber is -130.2
- * The variable dnumber is -20.5
- * The variable reminder is 1
- * The variable result is 3
+ * I am going to add two numbers together: The first one: 31 The second one: 42 The sum is 73 The subtraction reuslt is 11 The another sum result is 130 The variable varB is false The variable varC is
+ * true The variable fnumber is -130.2 The variable dnumber is -20.5 The variable reminder is 1 The variable result is 3
  */
 // Primitive types and operators
 public class JavaQuest1 {
@@ -70,7 +60,7 @@ public class JavaQuest1 {
     // Find reminder. Declare variable a & reminder
     int a = 7;
     int b = 3;
-    b = b+3;
+    b = b + 3;
     // Fix it ...
     int reminder = a - b;
     System.out.println("The variable reminder is " + reminder);
