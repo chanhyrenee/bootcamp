@@ -12,13 +12,14 @@ public class JavaQuest8 {
     int[] nums4 = new int[] {-10, 5, 100, 240, 240, 80}; // Second Max = 240
 
     // Your program should be able to handle all the above test case.
-    int max = 0;
-    int max2 = 0;
+    int max = Integer.MIN_VALUE;
+    int max2 = Integer.MIN_VALUE;
     for (int i = 0; i < nums.length; i++) {
-      if (nums[i] > max) {
-        max = nums[i];
-      } else if (nums[i] > max2) {
-        max2 = nums[i];
+      if (nums4[i] > max) {
+        max2 = max;
+        max = nums4[i];
+      } else if (nums4[i] > max2) {
+        max2 = nums4[i];
       }
     }
     System.out.println(max2);
