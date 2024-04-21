@@ -6,14 +6,14 @@ import java.util.Map;
 /**
  * Expected Output: Car Year=2020, Car Model=ModelY
  */
-public class Exercise12 {
+public class JavaQuest19 {
   // Declare instance variables carYear and carModel
 
   // Constructor with variables carYear and carModel
   private int carYear;
   private String carModel;
 
-  public Exercise12(int carYear, String carModel) {
+  public JavaQuest19(int carYear, String carModel) {
     this.carYear = carYear;
     this.carModel = carModel;
   }
@@ -24,7 +24,7 @@ public class Exercise12 {
   }
 
   public static void main(String[] args) {
-    Exercise12 myCar = new Exercise12(2020, "ModelY");
+    JavaQuest19 myCar = new JavaQuest19(2020, "ModelY");
     System.out.println(myCar.toString());
     // Create an instance of class Exercise12, with carYear 2020, and carModel
     // "ModelY"
