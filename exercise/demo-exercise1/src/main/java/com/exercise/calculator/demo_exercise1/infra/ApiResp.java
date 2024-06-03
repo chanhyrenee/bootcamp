@@ -1,11 +1,9 @@
 package com.exercise.calculator.demo_exercise1.infra;
 
-import com.exercise.calculator.demo_exercise1.dto.ResultDTO;
-
 public class ApiResp<T> {
   private String code;
   private String msg;
-  private ResultDTO resultDTO;
+  private T resultDTO;
 
   public String getCode() {
     return this.code;
@@ -15,7 +13,7 @@ public class ApiResp<T> {
     return this.msg;
   }
 
-  public ResultDTO getdata() {
+  public T getdata() {
     return this.resultDTO;
   }
 
@@ -32,7 +30,7 @@ public class ApiResp<T> {
   public static class ApiRespBuilder<T> {
     private String code;
     private String msg;
-    private ResultDTO resultDTO;
+    private T resultDTO;
 
     public ApiRespBuilder<T> success() {
       this.code = SysCode.SUCCESS.getCode();
@@ -46,7 +44,7 @@ public class ApiResp<T> {
       return this;
     }
 
-    public ApiRespBuilder<T> resultDTO(ResultDTO resultDTO) {
+    public ApiRespBuilder<T> resultDTO(T resultDTO) {
       this.resultDTO = resultDTO;
       return this;
     }
